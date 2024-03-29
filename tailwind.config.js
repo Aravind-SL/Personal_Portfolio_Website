@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/*/**.{html, svelte}"
+    './src/**/*.{html,js,svelte,ts}'
   ],
   theme: {
     extend: {},
