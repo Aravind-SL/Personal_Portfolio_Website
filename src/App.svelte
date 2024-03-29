@@ -1,7 +1,12 @@
 <script lang="ts">
-    import "./app.css";
+    import Router from 'svelte-spa-router';
+    import NotFound from './routes/NotFound.svelte';
+    const routes = {
+        "*": NotFound
+    }
+
 </script>
 
-<main>
-<h1>Hello</h1>
-</main>
+<body>
+    <Router {routes} />
+</body>
