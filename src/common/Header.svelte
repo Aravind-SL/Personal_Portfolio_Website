@@ -1,13 +1,13 @@
 <script lang="ts">
     import { fly, scale } from "svelte/transition";
     $: sticky = false;
-    document.addEventListener('scroll', (e) => {
+    document.addEventListener('scroll', () => {
         sticky = window.scrollY > 800;
     });
 
 </script>
 
-<header class="bg-gray-300/40 flex justify-between items-center absolute w-full px-12 py-4">
+<header class="bg-gray-300/40 backdrop-hue-rotate-90 backdrop-contrast-200 flex justify-between items-center absolute w-full px-12 py-4">
 <h1>
     Aravind S
 </h1>
