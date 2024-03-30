@@ -32,7 +32,7 @@ export const setup: RendererSetup = () => {
 
   renderer.setSize( window.innerWidth, window.innerHeight );
   renderer.domElement.className = "fixed -z-10 top-0 left-0";
-    document.body.appendChild( renderer.domElement );
+  document.body.appendChild( renderer.domElement );
 
 
 }

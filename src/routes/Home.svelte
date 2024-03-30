@@ -1,10 +1,11 @@
 <script lang="ts">
     import {fade} from 'svelte/transition';
     import {typeWriter} from '../lib/CustomTransition';
-    import {setup, animate} from '../lib/ThreeRenderer';
+    import {setup} from '../lib/PixiRenderer';
+//    import {setup, animate} from '../lib/ThreeRenderer';
 
     setup()
-    animate()
+//    animate()
 </script>
 
 
