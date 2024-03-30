@@ -13,9 +13,9 @@
 </h1>
 {#key sticky}
 <nav in:fly={{y:sticky ? -200 : 0, duration: 300}} out:scale class:stk={sticky} class="bg-transparent grid grid-flow-col w-fit bg-gray-200 top-3">
-    <div class="first:rounded-l-full last:rounded-r-full hover:scale-110 hover:bg-gray-400 bg-slate-300 p-3">nav</div>
-    <div class="first:rounded-l-full last:rounded-r-full hover:scale-110 hover:bg-gray-400 bg-slate-300 p-3">nav</div>
-    <div class="first:rounded-l-full last:rounded-r-full hover:scale-110 hover:bg-gray-400 bg-slate-300 p-3">nav</div>
+    <div class:bg-slate-300={sticky} class="first:rounded-l-full last:rounded-r-full hover:scale-110 hover:bg-gray-400  p-3">nav</div>
+    <div class:bg-slate-300={sticky} class="first:rounded-l-full last:rounded-r-full hover:scale-110 hover:bg-gray-400  p-3">nav</div>
+    <div class:bg-slate-300={sticky} class="first:rounded-l-full last:rounded-r-full hover:scale-110 hover:bg-gray-400  p-3">nav</div>
 </nav>
 {/key}
 <div>
