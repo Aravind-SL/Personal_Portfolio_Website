@@ -21,10 +21,10 @@
 </a>
 {#key sticky}
 <nav in:fly={{y: sticky ? -200: 0, duration: 300, delay: 200}} out:scale class:stk={sticky} class="bg-transparent grid grid-flow-col w-fit bg-gray-200 top-3">
-    <a transition:anim href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform  px-3 py-2">About Me</a>
-    <a transition:anim={{delay:100}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Projects</a>
-    <a transition:anim={{delay:200}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Certifications</a>
-    <a transition:anim={{delay:300}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Extras</a>
+    <a transition:anim href="/about" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform  px-3 py-2" use:link>About Me</a>
+    <a transition:anim={{delay:100}} href="/about" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2" use:link>Projects</a>
+    <a transition:anim={{delay:200}} href="/about" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2" use:link>Certifications</a>
+    <a transition:anim={{delay:300}} href="/about" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2" use:link>Extras</a>
 </nav>
 {/key}
 <div class="text-2xl inline-flex gap-4">
