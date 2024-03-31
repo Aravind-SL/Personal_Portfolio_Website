@@ -1,11 +1,16 @@
 <script lang="ts">
     import {link} from 'svelte-spa-router';
-    import { fly, scale } from "svelte/transition";
+    import type {TransitionConfig} from 'svelte/transition';
+    import { fly, scale, fade} from "svelte/transition";
     $: sticky = false;
     document.addEventListener('scroll', (e) => {
         sticky = window.scrollY > window.innerHeight / 4;
     });
 
+    type TransitionParams = {duration?: number, delay?: number}
+    type Transition = (node: Element, {}) => TransitionConfig;
+    const anim: Transition = (node, {delay, duration}: TransitionParams = {}) =>
+        sticky ? scale(node, {duration, delay}) : fade(node, {duration, delay: 0})
 </script>
 
 <header class="text-xs md:text-lg bg-gray-300/40 flex justify-between items-center absolute w-full px-12 py-4">
@@ -15,11 +20,11 @@
     </h1>
 </a>
 {#key sticky}
-<nav in:fly={{y:sticky ? -200 : 0, duration: 300, delay: 200}} out:scale class:stk={sticky} class="bg-transparent grid grid-flow-col w-fit bg-gray-200 top-3">
-    <a transition:scale href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform  px-3 py-2">About Me</a>
-    <a transition:scale={{delay:100}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Projects</a>
-    <a transition:scale={{delay:200}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Certifications</a>
-    <a transition:scale={{delay:300}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Extras</a>
+<nav in:fly={{y: sticky ? -200: 0, duration: 300, delay: 200}} out:scale class:stk={sticky} class="bg-transparent grid grid-flow-col w-fit bg-gray-200 top-3">
+    <a transition:anim href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform  px-3 py-2">About Me</a>
+    <a transition:anim={{delay:100}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Projects</a>
+    <a transition:anim={{delay:200}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Certifications</a>
+    <a transition:anim={{delay:300}} href="" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Extras</a>
 </nav>
 {/key}
 <div class="text-2xl inline-flex gap-4">
