@@ -3,19 +3,29 @@
     import {typeWriter} from '../lib/CustomTransition';
 //     import {setup} from '../lib/PixiRenderer';
     import {setup, animate} from '../lib/ThreeRenderer';
+    import Typewriter from 'svelte-typewriter';
+    import { concurrent, loop } from 'svelte-typewriter'
 
-    setup()
-    animate()
+  const messages: string[] = [
+    'Hello, world!',
+    'This is a looping typewriter animation.',
+    'Enjoy the show!'
+  ];
+
+  let currentIndex: number = 0;
+  const updateIndex = () => {
+    currentIndex = (currentIndex + 1) % messages.length;
+  };
 </script>
 
 
 <main id="main" class="w-full snap-y snap-mandatory z-10">
     <section class="w-full flex justify-between items-center snap-center h-screen">
-        <h1 class="text-gray-100 md:text-4xl lg:text-7xl w-1/3 ml-12" >
-            <span in:typeWriter={{speed:2}}>I'm not Aravind Arnold Schwarzenegger.</span>
-            <span in:typeWriter={{speed:0.5, delay: 3000}}>Or am I!</span>
-        </h1>
-        <img transition:fade={{delay: 3800}} class="object-cover object-center w-1/2 h-full"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg/220px-Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg" alt="">
+        <Typewriter mode="scramble" interval={50} scrambleDuration={3000}>
+            <h1>HEllo i am aravind</h1>
+        </Typewriter>
+        
+
     </section>
     <section class="w-full flex justify-center items-center snap-center h-screen">
         <p>Section 2</p>
