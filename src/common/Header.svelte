@@ -33,7 +33,7 @@
 </button>
 
 {#key sticky}
-<nav in:fly={{y:sticky ? -200 : 0, duration: 300, delay: 200}} out:scale class:stk={sticky} class="flex bg-gray-800/40 md:bg-transparent {mdScreen ? '' : menuToggle ? 'border-2 border-gray-900 m-4 animate-menu-drop flex-col text-center rounded-md items-center backdrop-blur-sm' : 'hidden'} text-sm justify-evenly md:gap-4  text-gray-900">
+<nav in:fly={{y:sticky ? -200 : 0, duration: 300, delay: 200}} out:scale class:stk={sticky} class="flex bg-gray-800/40 md:bg-transparent {mdScreen ? '' : menuToggle ? 'border-2 border-gray-900 m-4 animate-menu-drop flex-col text-center rounded-md items-center backdrop-blur-sm' : 'hidden'} text-sm justify-evenly text-gray-900">
     <a transition:scale href="/about" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform  px-3 py-2">About Me</a>
     <a transition:scale={{delay:100}} href="/projects" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Projects</a>
     <a transition:scale={{delay:200}} href="/certificates" class:stk-nav={sticky} class="hover:scale-110 hover:bg-gray-400 transition-transform px-3 py-2">Certifications</a>

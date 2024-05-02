@@ -6,7 +6,7 @@
     let currentIndex = 0;
     const names: string[] = [
         '  Data Engineer',
-        '  Data Scientist',   
+        '  Data Scientist',
         '  ML Engineer',
         '  Web Developer'
     ];
@@ -30,14 +30,11 @@
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <img class="px-2 rounded-full" src="Profile.jpg" alt="Profile photo" height="500" width="500">
         </div>
-        <div class="mt-16 mb-64 lg:mt-4 lg:mb-4">
+        <div class="">
             <Typewriter mode="scramble" interval={50} scrambleDuration={2500}>
                 <h1 class="text-gray-900 text-4xl lg:text-7xl ">Hello I'm Aravind</h1>
               </Typewriter>
-          
-              <Typewriter mode="loop" interval={100}>
-                <h1 class="flex flex-row items-end mt-4 text-gray-900 text-2xl lg:text-5xl ">I'm A   <span class="text-gray-900 text-xl lg:text-3xl lg:ml-12">  {message}</span></h1>
-              </Typewriter>
+              <h1 class="flex flex-row items-end mt-4 text-gray-900 text-2xl lg:text-5xl ">I'm a <Typewriter mode="loop" interval={100}><span class="ms-2 lg:ms-3 font-semibold">{message}</span></Typewriter></h1>
         </div>
     </section>
 
@@ -62,30 +59,30 @@
                 <div class="p-4 bg-white rounded-b-md">
                     <p>Project Heading</p>
                     <button>click me</button>
-                </div>  
+                </div>
             </div>
             <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
                 <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
                 <div class="p-4 bg-white rounded-b-md">
                     <p>Project Heading</p>
                     <button>click me</button>
-                </div>  
+                </div>
             </div>
             <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
                 <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
                 <div class="p-4 bg-white rounded-b-md">
                     <p>Project Heading</p>
                     <button>click me</button>
-                </div>  
+                </div>
             </div>
             <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
                 <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
                 <div class="p-4 bg-white rounded-b-md">
                     <p>Project Heading</p>
                     <button>click me</button>
-                </div>  
+                </div>
             </div>
-        </div>        
+        </div>
     </section>
    <!-- Experience Section -->
 
@@ -104,7 +101,7 @@
                 <p>Certificate name</p>
                 <p>Issued By</p>
                 <button>click me</button>
-            </div>  
+            </div>
         </div>
         <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
             <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
@@ -112,7 +109,7 @@
                 <p>Certificate name</p>
                 <p>Issued By</p>
                 <button>click me</button>
-            </div>  
+            </div>
         </div>
         <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
             <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
@@ -120,7 +117,7 @@
                 <p>Certificate name</p>
                 <p>Issued By</p>
                 <button>click me</button>
-            </div>  
+            </div>
         </div>
         <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
             <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
@@ -128,8 +125,8 @@
                 <p>Certificate name</p>
                 <p>Issued By</p>
                 <button>click me</button>
-            </div>  
+            </div>
         </div>
-    </div>        
+    </div>
 </section>
 </main>
