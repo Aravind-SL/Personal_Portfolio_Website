@@ -1,8 +1,11 @@
 <script lang="ts">
-//     import {setup} from '../lib/PixiRenderer';
+    // import {setup} from '../lib/PixiRenderer';
+    // import {Link} from 'svelte-routing';
+
     import Typewriter from 'svelte-typewriter';
     import { onMount } from 'svelte';
-    import {Link} from 'svelte-routing';
+    import projectsData from '../data/projects.json';
+    import cetificateData from '../data/certificates.json';
     let currentIndex = 0;
     const names: string[] = [
         '  Data Engineer',
@@ -21,12 +24,16 @@
 
         return () => clearInterval(intervalId);
     });
+    
+    
+    let projects = projectsData;
+    let certificates = cetificateData;
 </script>
 
 <main id="main" class="w-full snap-y snap-mandatory z-10">
     <!-- Hero Section -->
-    <section class ="w-full flex flex-col lg:flex-row justify-between items-center snap-center h-screen lg:px-16 ">
-        <div class="mt-32 lg:mt-2">
+    <section class ="w-full flex flex-col lg:flex-row-reverse justify-between items-center snap-center h-screen lg:px-16 ">
+        <div class="mt-32 lg:mt-2 lg:mr-32">
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <img class="px-2 rounded-full" src="Profile.jpg" alt="Profile photo" height="500" width="500">
         </div>
@@ -34,7 +41,7 @@
             <Typewriter mode="scramble" interval={50} scrambleDuration={2500}>
                 <h1 class="text-gray-900 text-4xl lg:text-7xl ">Hello I'm Aravind</h1>
               </Typewriter>
-              <h1 class="flex flex-row items-end mt-4 text-gray-900 text-2xl lg:text-5xl ">I'm a <Typewriter mode="loop" interval={100}><span class="ms-2 lg:ms-3 font-semibold">{message}</span></Typewriter></h1>
+              <h1 class="flex flex-row items-end mt-4 text-gray-900 text-2xl lg:text-5xl ">I'm a <Typewriter mode="loop" interval={100}><span class="ms-2 lg:ms-3 font-semibold ">{message}</span></Typewriter></h1>
         </div>
     </section>
 
@@ -50,83 +57,43 @@
         </div>
     </section>
 
-    <!-- Project Section -->
-    <section class="my-8">
+    <!-- Project Section -->      
+      <section class="my-8">
         <h1 class="ml-8 text-3xl mt-64 mb-32 lg:my-32 lg:text-5xl">Projects</h1>
         <div class="flex flex-wrap justify-center">
+          {#each projects as project}
             <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-                <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-                <div class="p-4 bg-white rounded-b-md">
-                    <p>Project Heading</p>
-                    <button>click me</button>
-                </div>
+              <!-- svelte-ignore a11y-img-redundant-alt -->
+              <img src="https://placehold.co/300x300" alt="Project Image" class="w-full h-auto rounded-t-md">
+              <div class="p-4 bg-white rounded-b-md">
+                <p>{project.heading}</p>
+                <button>click me</button>
+              </div>
             </div>
-            <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-                <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-                <div class="p-4 bg-white rounded-b-md">
-                    <p>Project Heading</p>
-                    <button>click me</button>
-                </div>
-            </div>
-            <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-                <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-                <div class="p-4 bg-white rounded-b-md">
-                    <p>Project Heading</p>
-                    <button>click me</button>
-                </div>
-            </div>
-            <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-                <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-                <div class="p-4 bg-white rounded-b-md">
-                    <p>Project Heading</p>
-                    <button>click me</button>
-                </div>
-            </div>
+          {/each}
         </div>
-    </section>
+      </section>
    <!-- Experience Section -->
-
+<!-- 
    <section class="my-8">
     <h1 class="ml-8 text-3xl mt-64 mb-32 lg:my-32 lg:text-5xl">Experience</h1>
 
-   </section>
+   </section> -->
 
    <!-- Certifications -->
    <section class="my-8">
     <h1 class="ml-8 text-3xl mt-64 mb-32 lg:my-32 lg:text-5xl">Certifications</h1>
     <div class="flex flex-wrap justify-center">
-        <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-            <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-            <div class="p-4 bg-white rounded-b-md">
-                <p>Certificate name</p>
-                <p>Issued By</p>
-                <button>click me</button>
+        {#each certificates as certificate}
+            <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
+                <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
+                <div class="p-4 bg-white rounded-b-md">
+                    <p>{certificate.heading}</p>
+                    <p>Issued By</p>
+                    <button>click me</button>
+                </div>
             </div>
-        </div>
-        <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-            <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-            <div class="p-4 bg-white rounded-b-md">
-                <p>Certificate name</p>
-                <p>Issued By</p>
-                <button>click me</button>
-            </div>
-        </div>
-        <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-            <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-            <div class="p-4 bg-white rounded-b-md">
-                <p>Certificate name</p>
-                <p>Issued By</p>
-                <button>click me</button>
-            </div>
-        </div>
-        <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-            <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-            <div class="p-4 bg-white rounded-b-md">
-                <p>Certificate name</p>
-                <p>Issued By</p>
-                <button>click me</button>
-            </div>
-        </div>
+        {/each}
     </div>
 </section>
 </main>
