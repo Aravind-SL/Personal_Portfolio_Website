@@ -1,0 +1,24 @@
+[
+    {
+        "image": "face_detection.jpg",
+        "heading": "Real Time Face Emotion Detection",
+        "date": "2024-03-02T00:00",
+        "url" : "https://github.com/Aravind-SL/Real_Time_Face_Emotion_Detection.git"
+    },
+    {
+        "image": "Au_chatbot.jpeg",
+        "heading": "AUThink IA: Annamalai University Chatbot",
+        "date": "2024-03-02T00:00",
+        "url" : "https://github.com/Amirth24/AU-Chatbot.git"
+    },{
+        "image": "structured_streaming.jpg",
+        "heading": "Structured streaming Kafka integration",
+        "date": "2024-03-02T00:00",
+        "url" : "https://github.com/Aravind-SL/Structured_streaming_Kafka_integration.git"
+    },{
+        "image": "A2J_mart.jpeg",
+        "heading": "E-Commerce Website",
+        "date": "2024-03-02T00:00",
+        "url" : "https://github.com/AshikJenly/E-commerce.git"
+    }
+]
