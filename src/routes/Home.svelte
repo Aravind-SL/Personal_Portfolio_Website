@@ -62,14 +62,21 @@
         <h1 class="ml-8 text-3xl mt-64 mb-32 lg:my-32 lg:text-5xl">Projects</h1>
         <div class="flex flex-wrap justify-center">
           {#each projects as project}
-            <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-              <!-- svelte-ignore a11y-img-redundant-alt -->
-              <img src="https://placehold.co/300x300" alt="Project Image" class="w-full h-auto rounded-t-md">
-              <div class="p-4 bg-white rounded-b-md">
-                <p>{project.heading}</p>
-                <button>click me</button>
-              </div>
+          <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
+            <img src={project.image} alt="placeholder" class="w-full h-48 object-cover rounded-t-md">
+            <div class="p-4 bg-white rounded-b-md">
+                <p class="text-center text-xl font-bold mb-4">{project.heading}</p>
+                <div class="flex flex-row justify-between mt-4">
+                    <p class="">
+                        {project.date}
+                    </p>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" class="block w-full h-full">View</a>
+                    </button>
+                </div>
             </div>
+        </div>
+        
           {/each}
         </div>
       </section>
@@ -85,14 +92,21 @@
     <h1 class="ml-8 text-3xl mt-64 mb-32 lg:my-32 lg:text-5xl">Certifications</h1>
     <div class="flex flex-wrap justify-center">
         {#each certificates as certificate}
-            <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-                <img src="https://placehold.co/300x300" alt="placeholder" class="w-full h-auto rounded-t-md">
-                <div class="p-4 bg-white rounded-b-md">
-                    <p>{certificate.heading}</p>
-                    <p>Issued By</p>
-                    <button>click me</button>
+        <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
+            <img src={certificate.image} alt="placeholder" class="w-full h-auto rounded-t-md">
+            <div class="p-4 bg-white rounded-b-md">
+                <p class="text-center text-xl font-bold mb-4">{certificate.heading}</p>
+                <div class="flex justify-between">
+                    <p>{certificate.issued_by}</p>
+                    <p>{certificate.issued_on}</p>
+                </div>
+                <div class="flex flex-row-reverse mt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
+                        <a href={certificate.url} target="_blank" rel="noopener noreferrer" class="block w-full h-full">View</a>
+                    </button>
                 </div>
             </div>
+        </div>
         {/each}
     </div>
 </section>
