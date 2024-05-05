@@ -63,9 +63,13 @@
         <div class="flex flex-wrap justify-center">
           {#each projects as project}
           <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-            <img src={project.image} alt="placeholder" class="w-full h-48 object-cover rounded-t-md">
+            <a href={project.url} target="_blank" rel="noopener noreferrer" class="block w-full h-auto rounded-t-md">
+                <img src={project.image} alt="placeholder" class="w-full h-auto rounded-t-md">
+            </a>
             <div class="p-4 bg-white rounded-b-md">
-                <p class="text-center text-xl font-bold mb-4">{project.heading}</p>
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    <p class="text-center text-xl font-bold mb-4">{project.heading}</p>
+                </a>
                 <div class="flex flex-row justify-between mt-4">
                     <p class="">
                         {project.date}
@@ -93,20 +97,24 @@
     <div class="flex flex-wrap justify-center">
         {#each certificates as certificate}
         <div class="rounded-md m-8 border-2 border-gray-400 max-w-sm">
-            <img src={certificate.image} alt="placeholder" class="w-full h-auto rounded-t-md">
+            <a href={certificate.url} target="_blank" rel="noopener noreferrer" class="block w-full h-auto rounded-t-md">
+                <img src={certificate.image} alt="placeholder" class="w-full h-auto rounded-t-md">
+            </a>
             <div class="p-4 bg-white rounded-b-md">
-                <p class="text-center text-xl font-bold mb-4">{certificate.heading}</p>
+                <a href={certificate.url} target="_blank" rel="noopener noreferrer"> 
+                    <p class="text-center text-xl font-bold mb-4">{certificate.heading}</p>
+                </a>
                 <div class="flex justify-between">
                     <p>{certificate.issued_by}</p>
                     <p>{certificate.issued_on}</p>
                 </div>
                 <div class="flex flex-row-reverse mt-4">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         <a href={certificate.url} target="_blank" rel="noopener noreferrer" class="block w-full h-full">View</a>
                     </button>
                 </div>
             </div>
-        </div>
+        </div> 
         {/each}
     </div>
 </section>
