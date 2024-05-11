@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "image": "gate_crop.jpg",
         "heading": "GATE 2024 ScoreCard",
         "issued_by": "GATE",
@@ -8,6 +9,7 @@
         
     },
     {
+        "id": 2,
         "image": "deep_learning.jpg",
         "heading": "Deep Learning",
         "issued_by": "NPTEL Online Course",
@@ -16,6 +18,7 @@
         
     },
     {
+        "id": 3,
         "image": "ML_1.jpg",
         "heading": "Supervised ML Algorithms",
         "issued_by": "Coursera",
@@ -24,6 +27,7 @@
         
     },
     {
+        "id": 4,
         "image": "ML_2.jpg",
         "heading": "Advanced Learning Algorithm",
         "issued_by": "Coursera",
@@ -32,6 +36,7 @@
         
     },
     {
+        "id": 5,
         "image": "100_days.jpg",
         "heading": "100 Days of Python Programming",
         "issued_by": "Udemy",
@@ -40,6 +45,7 @@
         
     },
     {
+        "id": 6,
         "image": "Python_DSA.jpg",
         "heading": "DSA in Python",
         "issued_by": "Udemy",
@@ -48,6 +54,7 @@
         
     },
     {
+        "id": 7,
         "image": "Network.jpg",
         "heading": "Bits and Bytes of Computer Networking",
         "issued_by": "Coursera",
@@ -56,6 +63,7 @@
         
     },
     {
+        "id": 8,
         "image": "Shell.jpg",
         "heading": "Linux Commands and Shell Scripting",
         "issued_by": "Coursera",
@@ -64,6 +72,7 @@
         
     },
     {
+        "id": 9,
         "image": "Data_vis.jpg",
         "heading": "Data Visualisation",
         "issued_by": "Coursera",
@@ -72,6 +81,7 @@
         
     },
     {
+        "id": 10,
         "image": "SQL.jpg",
         "heading": "Introduction to SQL",
         "issued_by": "Udemy",
@@ -80,9 +90,19 @@
         
     },
     {
+        "id": 11,
         "image": "Excel.jpg",
-        "heading": "Advanced Learning Algorithm",
-        "issued_by": "Coursera",
+        "heading": "Excel",
+        "issued_by": "Udemy",
+        "issued_on": "2024-03-02T00:00",
+        "url" : "https://drive.google.com/file/d/1AuNMeSHFpEnBqDrQeuT8HsI7P6aUJSak/view?usp=sharing"
+        
+    },
+    {
+        "id": 12,
+        "image": "Excel.jpg",
+        "heading": "Excel",
+        "issued_by": "Udemy",
         "issued_on": "2024-03-02T00:00",
         "url" : "https://drive.google.com/file/d/1AuNMeSHFpEnBqDrQeuT8HsI7P6aUJSak/view?usp=sharing"
         
