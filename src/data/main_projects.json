@@ -1,52 +1,58 @@
 [
     {
-        "image": "face_detection.jpg",
-        "heading": "Real Time Face Emotion Detection",
-        "description": "A food classification project with a user interface to upload a food image and get the model's prediction. In this project, I used Transfer Learning with EfficientNet's pretrained model for image classification and fine-tuned it for the Food101 dataset.",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/Aravind-SL/Real_Time_Face_Emotion_Detection.git"
-    },
-    {
         "image": "Au_chatbot.jpeg",
         "heading": "AUThink IA: Annamalai University Chatbot",
         "description": "AUThink IA is an intelligent chatbot designed specifically for Annamalai University. It serves as a friendly and helpful virtual assistant for students and staff, providing instant access to a wide range of information and support services.",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/Amirth24/AU-Chatbot.git"
-    },{
-        "image": "structured_streaming.jpg",
-        "heading": "Structured streaming Kafka integration",
-        "description": "Implemented a structured streaming pipeline integrating Apache Kafka for real-time data ingestion from CSV files, with Spark performing transformations before storing data in Cassandra for analytics. Concurrently, executed parallel queries on Cassandra and stored results in a SQL database for structured storage and analysis.",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/Aravind-SL/Structured_streaming_Kafka_integration.git"
-    },{
-        "image": "A2J_mart.jpeg",
-        "heading": "E-Commerce Website",
-        "description": "E-commerce website offers shopping experience for users, allowing them to browse and purchase a wide range of products. The platform includes a user-friendly interface and personalized account features. Additionally, an admin panel empowers authorized administrators to easily manage product listings, update inventory, and monitor sales",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/AshikJenly/E-commerce.git"
-    },{
-        "image": "sales_price.jpg",
-        "heading": "Sales Price Prediction",
-        "description": "Sales Price Prediction is a data-driven approach that utilizes machine learning algorithms to forecast product prices accurately. By analyzing historical sales data and other relevant features, it helps businesses make informed decisions, optimize pricing strategies, and predict future sales trends",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/Aravind-SL/Sales_price_prediction.git"
-    },{
-        "image": "campus.jpg",
-        "heading": "Campus placement Prediction",
-        "description": "The Campus Placements Prediction Web App is a tool designed to predict the likelihood of a student getting placed during campus placements based on various factors such as academic performance, skills, and other relevant data.",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/Aravind-SL/Campus_placement_prediction.git"
-    },{
-        "image": "T20_dash.jpg",
-        "heading": "T20 Data Analysis",
-        "description": "Analyzing the T20 World Cup 2022 and finding out the best 11, by using data from esncricinfo. We create a dynamic dashboard with the help of Microsoft Power BI",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/Aravind-SL/T20_Data_Analysis.git"
-    },{
+        "date": "May 2024",
+        "url": "https://github.com/Amirth24/AU-Chatbot.git"
+    },
+    {
         "image": "compsem.jpg",
         "heading": "CompSem'24 Website",
         "description": "CompSem'24 is a static website designed to showcase the College Symposium event. It offers comprehensive details about the Computer Science Department, shows the history of CompSem event, provides insights of the History of TechClub and showcase its activities, and facilitates event registration through Google Forms.",
-        "date": "2024-03-02T00:00",
-        "url" : "https://github.com/AU2125/compsem-24-web.git"
+        "date": "Feb 2024",
+        "url": "https://github.com/AU2125/compsem-24-web.git"
+    },
+    {
+        "image": "structured_streaming.jpg",
+        "heading": "Structured streaming Kafka integration",
+        "description": "Implemented a structured streaming pipeline integrating Apache Kafka for real-time data ingestion from CSV files, with Spark performing transformations before storing data in Cassandra for analytics. Concurrently, executed parallel queries on Cassandra and stored results in a SQL database for structured storage and analysis.",
+        "date": "Jan 2024",
+        "url": "https://github.com/Aravind-SL/Structured_streaming_Kafka_integration.git"
+    },
+    {
+        "image": "A2J_mart.jpeg",
+        "heading": "E-Commerce Website",
+        "description": "E-commerce website offers shopping experience for users, allowing them to browse and purchase a wide range of products. The platform includes a user-friendly interface and personalized account features. Additionally, an admin panel empowers authorized administrators to easily manage product listings, update inventory, and monitor sales",
+        "date": "Nov 2023",
+        "url": "https://github.com/AshikJenly/E-commerce.git"
+    },
+    {
+        "image": "campus.jpg",
+        "heading": "Campus placement Prediction",
+        "description": "The Campus Placements Prediction Web App is a tool designed to predict the likelihood of a student getting placed during campus placements based on various factors such as academic performance, skills, and other relevant data.",
+        "date": "Aug 2023",
+        "url": "https://github.com/Aravind-SL/Campus_placement_prediction.git"
+    },
+    {
+        "image": "sales_price.jpg",
+        "heading": "Sales Price Prediction",
+        "description": "Sales Price Prediction is a data-driven approach that utilizes machine learning algorithms to forecast product prices accurately. By analyzing historical sales data and other relevant features, it helps businesses make informed decisions, optimize pricing strategies, and predict future sales trends",
+        "date": "July 2023",
+        "url": "https://github.com/Aravind-SL/Sales_price_prediction.git"
+    },
+    {
+        "image": "face_detection.jpg",
+        "heading": "Real Time Face Emotion Detection",
+        "description": "A food classification project with a user interface to upload a food image and get the model's prediction. In this project, I used Transfer Learning with EfficientNet's pretrained model for image classification and fine-tuned it for the Food101 dataset.",
+        "date": "April 2023",
+        "url": "https://github.com/Aravind-SL/Real_Time_Face_Emotion_Detection.git"
+    },
+    {
+        "image": "T20_dash.jpg",
+        "heading": "T20 Data Analysis",
+        "description": "Analyzing the T20 World Cup 2022 and finding out the best 11, by using data from esncricinfo. We create a dynamic dashboard with the help of Microsoft Power BI",
+        "date": "Jan 2023",
+        "url": "https://github.com/Aravind-SL/T20_Data_Analysis.git"
     }
 ]

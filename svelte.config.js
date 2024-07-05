@@ -5,3 +5,18 @@ export default {
   // for more information about preprocessors
   preprocess: vitePreprocess(),
 }
+const config = {
+  // existing props
+  kit: {
+    // existing props
+    vite: {
+      optimizeDeps: {
+        include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
+      },
+      alias: {
+        "@/*": "./path/to/lib/*",
+      },
+      // plugins: []
+    }
+  }
+}

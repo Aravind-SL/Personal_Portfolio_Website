@@ -1,0 +1,33 @@
+{
+    "amirth" : {
+        "name": "Amirthanathan R",
+        "links": [
+            {
+                "name": "Amith24",
+                "profile": "GH",
+                "link": "https://github.com/Amirth24"
+            },
+            {
+                "name": "Amirthanathan R",
+                "profile": "WB",
+                "link": "https://amirth24.github.io"
+            }
+        ]
+    },
+    "ashikjenly" : {
+        "name": "Ashik Jenly",
+        "links": [
+            {
+                "name": "Ashikjenly",
+                "profile": "GH",
+                "link": "https://github.com/Ashikjenly"
+            },
+            {
+                "name": "Ashik Jenly",
+                "profile": "WB",
+                "link": "https://ashikjenly.netlify.app/"
+            }
+        ]
+    }
+
+}
