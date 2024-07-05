@@ -1,31 +1,36 @@
 <script>
-   
 </script>
 
-<hr>
-
-<footer class="bg-gray-300 pt-6">
-   <div class="text-center my-16 text-2xl lg:text-3xl">
-      <p>Got a <strong>project</strong> in mind or just want to <strong>say hello 👋</strong>
-      <p class="my-2">Let's make something awesome together!</p>
-      <p>Contact Me Through any of the medium</p>
+<footer class=" text-white py-8 m-8 rounded-md border-primary border-2 backdrop-blur">
+  <div class=" mx-auto text-center">
+    <h2 class="text-3xl lg:text-4xl mb-4">
+      Got a <strong>project</strong> in mind or just want to <strong>say hello 👋</strong>
+    </h2>
+    <p class="text-lg mb-2">Let's make something awesome together!</p>
+    <p class="text-lg mb-8">Contact me through any of the mediums below</p>
+    <div class="flex justify-center gap-8 mb-8">
+      <a href="https://x.com/Aravind_sl1" class="text-white hover:text-blue-500">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="mailto:aravind.slg1@gmail.com" class="text-white hover:text-red-500">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/aravind-sl/" class="text-white hover:text-blue-700">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+    <p class="text-center py-4">
+      &copy; <strong>Aravind S</strong> All rights reserved
+    </p>
   </div>
-   <div class="container mx-auto flex gap-8 justify-center items-center">
-       <a href="#" class="mr-4">
-        <i class="fa-brands fa-x-twitter fa-2x"></i>
-       </a>
-       <a href="#" class="mr-4">
-         <i class="fa-solid fa-phone fa-2x"></i>
-       </a>
-       <a href="#" class="mr-4">
-         <i class="fa-solid fa-envelope fa-2x"></i>
-       </a>
-       <a href="#" class="mr-4">
-         <i class="fa-brands fa-linkedin fa-2x"></i>
-       </a>
-   </div>
-   <p class="flex justify-center text-center py-4">@Copyrights  <strong> Aravind S </strong>  All rights reserved</p>
 </footer>
 
-<hr>
-
+<style>
+  footer {
+    background-color: #1a202c; /* Tailwind CSS bg-gray-800 */
+    color: #f7fafc; /* Tailwind CSS text-white */
+  }
+  footer a {
+    transition: color 0.3s;
+  }
+</style>
