@@ -22,7 +22,7 @@
         "heading": "Structured streaming Kafka integration",
         "description": "Implemented a structured streaming pipeline integrating Apache Kafka for real-time data ingestion from CSV files, with Spark performing transformations before storing data in Cassandra for analytics. Concurrently, executed parallel queries on Cassandra and stored results in a SQL database for structured storage and analysis.",
         "date": "Jan 2024",
-        "techs":["Python, Kafka, Spark, Cassandra"],
+        "techs":["Python", "Kafka", "Spark", "Cassandra"],
         "url": "https://github.com/Aravind-SL/Structured_streaming_Kafka_integration.git"
     },
     {
