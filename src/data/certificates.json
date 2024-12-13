@@ -1,34 +1,86 @@
 [
-    {
-        "image": "deep_learning.jpg",
-        "heading": "Deep Learning",
-        "issued_by": "NPTEL Online Course",
-        "issued_on": "Nov 2024",
-        "url" : "https://drive.google.com/file/d/12TVd5_jG6WNJNwXBQLwDkoylbClh0M6l/view?usp=drive_link",
-        "date": "2024-03-02T00:00:00"
-    },
-    {
-        "image": "ML_1.jpg",
-        "heading": "Supervised ML Algorithms",
-        "issued_by": "Coursera",
-        "issued_on": "Apr 2023",
-        "url" : "https://drive.google.com/file/d/1xQHLR6TVad-77v_l-6O7B_I4SnuQziVV/view?usp=drive_link",
-        "date": "2024-03-02T00:00:00"
-    },
-    {
-        "image": "ML_2.jpg",
-        "heading": "Advanced Learning Algorithm",
-        "issued_by": "Coursera",
-        "issued_on": "Jun 2023",
-        "url" : "https://drive.google.com/file/d/1wu_Ur7y3Sc6_EtzKbMpdzRwblLGTtJfg/view?usp=drive_link",
-        "date": "2024-03-02T00:00:00"
-    },
-    {
-        "image": "100_days.jpg",
-        "heading": "100 Days of Python Programming",
-        "issued_by": "Udemy",
-        "issued_on": "Sept 2022",
-        "url" : "https://drive.google.com/file/d/1nC4jOHjSjb4iKPCNgalLm5CxB9RXZjHc/view?usp=sharing",
-        "date": "2024-03-02T00:00:00"
-    }
+ {
+    "image": "NLP.png",
+    "heading": "Natural Language Processing",
+    "issued_by": "NPTEL Online Course",
+    "issued_on": "April 2024",
+    "url": "https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs39/Course/NPTEL24CS39S125390019930410119.pdf"
+ },
+  {
+      "image": "gate_crop.jpg",
+      "heading": "GATE 2024 ScoreCard",
+      "issued_by": "GATE",
+      "issued_on": "March 2024",
+      "url": "https://drive.google.com/file/d/1ojxYdSPc6ncHrSZ2MQhl0TwoIXYcizfZ/view?usp=sharing"
+  },
+  {
+      "image": "deep_learning.jpg",
+      "heading": "Deep Learning",
+      "issued_by": "NPTEL Online Course",
+      "issued_on": "Nov 2023",
+      "url": "https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs110/Course/NPTEL23CS110S63390050320103095.pdf"
+  },
+  {
+      "image": "Excel.jpg",
+      "heading": "Excel",
+      "issued_by": "Udemy",
+      "issued_on": "Jun 2023",
+      "url": "https://drive.google.com/file/d/1AuNMeSHFpEnBqDrQeuT8HsI7P6aUJSak/view?usp=sharing"
+  },
+  {
+      "image": "ML_2.jpg",
+      "heading": "Advanced Learning Algorithm",
+      "issued_by": "Coursera",
+      "issued_on": "Jun 2023",
+      "url": "https://drive.google.com/file/d/1wu_Ur7y3Sc6_EtzKbMpdzRwblLGTtJfg/view?usp=drive_link"
+  },
+  {
+      "image": "ML_1.jpg",
+      "heading": "Supervised ML Algorithms",
+      "issued_by": "Coursera",
+      "issued_on": "April 2023",
+      "url": "https://drive.google.com/file/d/1xQHLR6TVad-77v_l-6O7B_I4SnuQziVV/view?usp=drive_link"
+  },
+  {
+      "image": "Data_vis.jpg",
+      "heading": "Data Visualisation",
+      "issued_by": "Forage",
+      "issued_on": "March 2023",
+      "url": "https://drive.google.com/file/d/10KZu4f0tMhoRfgaIL8w9UveQGuMmqrCH/view?usp=sharing"
+  },
+  {
+      "image": "SQL.jpg",
+      "heading": "Introduction to SQL",
+      "issued_by": "Udemy",
+      "issued_on": "Feb 2023",
+      "url": "https://drive.google.com/file/d/10KZu4f0tMhoRfgaIL8w9UveQGuMmqrCH/view?usp=sharing"
+  },
+  {
+      "image": "Shell.jpg",
+      "heading": "Linux Commands and Shell Scripting",
+      "issued_by": "Coursera",
+      "issued_on": "Jan 2023",
+      "url": "https://drive.google.com/file/d/10KZu4f0tMhoRfgaIL8w9UveQGuMmqrCH/view?usp=sharing"
+  },
+  {
+      "image": "Network.jpg",
+      "heading": "Bits and Bytes of Computer Networking",
+      "issued_by": "Coursera",
+      "issued_on": "Dec 2022",
+      "url": "https://drive.google.com/file/d/10KZu4f0tMhoRfgaIL8w9UveQGuMmqrCH/view?usp=sharing"
+  },
+  {
+      "image": "Python_DSA.jpg",
+      "heading": "DSA in Python",
+      "issued_by": "Udemy",
+      "issued_on": "Dec 2022",
+      "url": "https://drive.google.com/file/d/1y9Cea_mPnwQLiEwaRI9aq6Ef_cxudFLO/view?usp=sharing"
+  },
+  {
+      "image": "100_days.jpg",
+      "heading": "100 Days of Python Programming",
+      "issued_by": "Udemy",
+      "issued_on": "Sept 2022",
+      "url": "https://drive.google.com/file/d/1nC4jOHjSjb4iKPCNgalLm5CxB9RXZjHc/view?usp=sharing"
+  }
 ]

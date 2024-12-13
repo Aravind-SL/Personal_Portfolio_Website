@@ -5,11 +5,11 @@ const config = {
 	darkMode: ["class"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	safelist: ["dark"],
+	fontFamily: {
+		'jaini': ["Jaini", "system-ui"],
+		'arvo': ["Arvo", "serif"],
+	},
 	theme: {
-		fontFamily: {
-			'jani': ["Jaini", "system-ui"],
-			'arvo': ["Arvo", "serif"],
-		},
 		container: {
 			center: true,
 			padding: "2rem",
@@ -19,11 +19,6 @@ const config = {
 		},
 		extend: {
 			colors: {
-				main_bg:"#2C3531",
-				text_1: "#3bd9dd",
-				text_2: "#116466",
-				support_1: "#D9B08C",
-				support_2: "#FFCB9A",
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -64,7 +59,10 @@ const config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
+				sans: [...fontFamily.sans],
+				mono: [...fontFamily.mono],
+				lato: ['Lato']
+
 			}
 		}
 	},
