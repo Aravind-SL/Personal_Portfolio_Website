@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Frontend",
+    "skills" : [
+      "React",
+      "Svelte",
+      "TailwindCSS"
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills" : [
+      "Spring Boot",
+      "PostgreSQL",
+      "MongoDB",
+      "CassandraDB"      
+    ]
+  },
+  {
+    "category": "Languages", 
+    "skills": [
+      "Python",
+      "Java"
+    ]
+  },
+  {
+    "category": "Big Data tools",
+    "skills" : [
+      "Apache Hadoop",
+      "Apache Spark",
+      "Kafka",
+      "Airflow"      
+    ]
+  },
+  {
+    "category" : "Tools",
+    "skills" : [
+      "Linux", 
+      "Docker",
+      "Git & Github"
+
+    ]
+  }
+]
